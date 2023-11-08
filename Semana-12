@@ -373,3 +373,118 @@ q0,_,>
 
 --------------------------------------------------------------------------------------
 
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 4.e
+init: q0
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0,a
+qb,X,>
+
+q0,b
+qa,X,>
+
+q0,c
+q0,c,>
+
+q0,X
+q0,X,>
+
+q0,_
+qacc,_,-
+
+qb,a
+qb,a,>
+
+qb,b
+qini,X,<
+
+qb,c
+qb,c,>
+
+qb,X
+qb,X,>
+
+qb,_
+qrch,_,-
+
+qa,a
+qini,X,<
+
+qa,b
+qa,b,>
+
+qa,c
+qa,c,>
+
+qa,X
+qa,X,>
+
+qa,_
+qrch,_,-
+
+qini,a
+qini,a,<
+
+qini,b
+qini,b,<
+
+qini,c
+qini,c,<
+
+qini,X
+qini,X,<
+
+qini,_
+q0,_,>
+
+
+--------------------------------------------------------------------------------------
+
+name: 5
+init: q0
+accept: qacc
+
+q0,|,_
+q0,|,_,>,-
+
+q0,#,_
+qm,#,_,>,-
+
+q0,_,_
+qacc,_,_,-,-
+
+qm,|,_
+qop,X,_,<,-
+
+qm,#,_
+qrch,#,_,-,-
+
+qm,X,_
+qm,X,_,>,-
+
+qm,_,_
+qacc,_,_,-,-
+
+qop,|,_
+qop,|,|,<,>
+
+qop,#,_
+qop,#,_,<,-
+
+qop,X,_
+qop,X,_,<,-
+
+qop,_,_
+q0,_,_,>,-
+
+
+
+
+
