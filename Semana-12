@@ -1,0 +1,375 @@
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 2.a
+init: q0w
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0w,a
+qacc,a,-
+
+q0w,b
+q0w,b,>
+
+q0w,-
+q0w,-,-
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 2.b
+init: q0w
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0w,a
+qcamb,X,>
+
+q0w,b
+q0w,b,>
+
+q0w,-
+q0w,-,-
+
+qcamb,a
+qcamb,a,>
+
+qcamb,b
+qacc,b,-
+
+qcamb,-
+qcamb,-,-
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 2.c
+init: q0w
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0w,a
+q0w,a,>
+
+q0w,b
+q0w,b,>
+
+q0w,_
+qbusq,_,<
+
+qbusq,a
+qbusq,a,<
+
+qbusq,b
+qacc,b,-
+
+qbusq,-
+qbusq,_,-
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 4.a
+init: q0
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0,a
+qct,_,>
+
+q0,b
+qct,_,>
+
+q0,c
+qct,_,>
+
+q0,_
+qrch,_,-
+
+qct,a
+qct,a,>
+
+qct,b
+qct,b,>
+
+qct,c
+qct,c,>
+
+qct,_
+q1,_,<
+
+q1,a
+qdv,_,<
+
+q1,b
+qdv,_,<
+
+q1,c
+qdv,_,<
+
+q1,_
+qacc,_,-
+
+qdv,a
+qdv,a,<
+
+qdv,b
+qdv,b,<
+
+qdv,c
+qdv,c,<
+
+qdv,_
+q0,_,>
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 4.b
+init: q0
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0,a
+q1,X,>
+
+q0,b
+q0,b,>
+
+q0,c
+q0,c,>
+
+q0,_
+qrch,_,-
+
+q1,a
+q2,X,>
+
+q1,b
+q1,b,>
+
+q1,c
+q1,c,>
+
+q1,_
+qrch,_,-
+
+q2,a
+q3,X,>
+
+q2,b
+q2,b,>
+
+q2,c
+q2,c,>
+
+q2,_
+qacc,_,-
+
+q3,a
+qrch,a,-
+
+q3,b
+q3,b,>
+
+q3,c
+q3,c,>
+
+q3,_
+qacc,_,-
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 4.c
+init: q0
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0,a
+qbf,_,>
+
+q0,b
+qrch,_,-
+
+q0,c
+qrch,_,-
+
+q0,_
+qacc,_,-
+
+qbf,a
+qbf,a,>
+
+qbf,b
+qbf,b,>
+
+qbf,c
+qbf,c,>
+
+qbf,_
+q1,_,<
+
+q1,a
+qrch,_,-
+
+q1,b
+qbc,_,<
+
+q1,c
+qrch,_,-
+
+q1,_
+qrch,_,-
+
+qbc,a
+qbc,a,<
+
+qbc,b
+qbc,b,<
+
+qbc,c
+qbc,c,<
+
+qbc,_
+q0,_,>
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
+//LOAD AN EXAMPLE TO TRY
+//then load an input and click play
+
+//Syntax:
+
+//-------CONFIGURATION
+name: 4.d
+init: q0
+accept: qacc
+
+//-------DELTA FUNCTION:
+q0,a
+qbb,X,>
+
+q0,b
+qrch,_,-
+
+q0,c
+qrch,_,-
+
+q0,X
+q0,X,>
+
+q0,_
+qacc,_,-
+
+qbb,a
+qbb,a,>
+
+qbb,b
+qbc,X,>
+
+qbb,c
+qrch,c,-
+
+qbb,X
+qbb,X,>
+
+qbb,_
+qrch,_,-
+
+qbc,a
+qrch,_,-
+
+qbc,b
+qbc,b,>
+
+qbc,c
+qbi,X,<
+
+qbc,X
+qbc,X,>
+
+qbc,_
+qrch,_,-
+
+qbi,a
+qbi,a,<
+
+qbi,b
+qbi,b,<
+
+qbi,c
+qrch,c,-
+
+qbi,X
+qbi,X,<
+
+qbi,_
+q0,_,>
+
+//States and symbols are case-sensitive
+
+//Load your code and click COMPILE.
+//or load an example (top-right).
+
+--------------------------------------------------------------------------------------
+
